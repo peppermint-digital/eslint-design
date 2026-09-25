@@ -1,0 +1,22 @@
+{
+    "name": "@peppermint-digital/eslint-design",
+    "version": "0.1.0",
+    "description": "Design-Lint-Regeln und die flottenweit gleichen Ausnahmen — Ergaenzung zu @shadcn/lint",
+    "type": "module",
+    "exports": {
+        ".": "./index.js"
+    },
+    "files": [
+        "index.js",
+        "rules"
+    ],
+    "peerDependencies": {
+        "eslint": ">=9.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/peppermint-digital/eslint-design.git"
+    },
+    "author": "Peppermint Digital",
+    "license": "MIT"
+}
