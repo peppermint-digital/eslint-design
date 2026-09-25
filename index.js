@@ -63,6 +63,11 @@ export const NO_RESTYLE_AUS = Object.freeze({
  * mit — das ist ihr Bauplan, nicht unsere Abweichung. Ohne diese Ausnahme
  * meldet jedes `npx shadcn add` neue Befunde, fuer die niemand etwas kann.
  *
+ * Konkret bei den Inline-Styles: Radix-Progress rechnet sein `translateX`
+ * selbst aus, und `chart.tsx` spritzt die Farb-Variablen per `<style>`-Block
+ * ein. Beides ist Laufzeitgeometrie bzw. Laufzeitfarbe — der vorgesehene Weg,
+ * nicht der Ausweg.
+ *
  * `no-raw-colors` und `keine-palettenklassen` bleiben hier ABSICHTLICH scharf:
  * Eine rohe Farbe ist auch in einem Baustein eine rohe Farbe.
  *
